@@ -47,7 +47,7 @@ class Dashboard extends Controller
                 [
                     'judul' => 'required|string',
                     'isi' => 'required|string',
-                    'gambar' => 'required',
+                    'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
                 ]
             );
             // informasi::create($request::all());
